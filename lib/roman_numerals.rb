@@ -1,13 +1,12 @@
 class RomanNumerals
 
   def translate(numeral)
-
+    decimal = 0
     if numeral == "I"
-      1
+      decimal = 1
     elsif numeral == "V"
-      5
-    else
-      0
+      decimal = 5
     end
+    decimal
   end
 end
