@@ -8,4 +8,12 @@ RSpec.describe RomanNumerals do
 
     expect(roman_numeral).to eq(0)
   end
+
+  it "converts I to 1" do
+    roman_numeral_converter = RomanNumerals.new
+
+    roman_numeral = roman_numeral_converter.translate("I")
+
+    expect(roman_numeral).to eq(1)
+    end
 end

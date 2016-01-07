@@ -1,7 +1,11 @@
 class RomanNumerals
 
   def translate(numeral)
-    return 0
-  end
 
+    if numeral == "I"
+      1
+    else
+      0
+    end
+  end
 end
