@@ -6,6 +6,8 @@ class RomanNumerals
       decimal = 1
     elsif numeral == "V"
       decimal = 5
+    elsif numeral == ""
+      decimal = 0
     end
     decimal
   end
