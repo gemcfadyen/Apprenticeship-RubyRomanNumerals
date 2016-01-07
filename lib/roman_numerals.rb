@@ -1,13 +1,13 @@
 class RomanNumerals
   DECIMALS = [0, 1, 5]
   ROMANS = ["", "I", "V"] 
-  def translate(numeral)
+  def translate(decimal)
 
     for i in 0..DECIMALS.length
-      if numeral == ROMANS[i]
-        decimal = DECIMALS[i]
+      if decimal == DECIMALS[i]
+        roman = ROMANS[i]
       end
     end
-    decimal
+    roman
   end
 end
