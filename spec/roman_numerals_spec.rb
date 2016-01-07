@@ -15,5 +15,13 @@ RSpec.describe RomanNumerals do
     roman_numeral = roman_numeral_converter.translate("I")
 
     expect(roman_numeral).to eq(1)
-    end
+  end
+
+  it "converts V to 5" do
+    roman_numeral_converter = RomanNumerals.new
+
+    roman_numeral = roman_numeral_converter.translate("V")
+
+    expect(roman_numeral).to eq(5)
+  end
 end
