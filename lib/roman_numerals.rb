@@ -1,16 +1,15 @@
 class RomanNumerals
-  DECIMALS = [1, 5].reverse
-  ROMANS = ["I", "V"].reverse
-  
+  DECIMALS = [1, 4, 5, 9, 10, 100].reverse
+  ROMANS = ["I", "IV", "V", "IX", "X", "C"].reverse
+
   def translate(decimal)
     roman = ""
     for i in 0..DECIMALS.length - 1
       while decimal >= DECIMALS[i]
         roman += ROMANS[i]
         decimal -= DECIMALS[i]
-        puts "new value of decimal is " + decimal.to_s
       end
-      
+
     end
     roman
   end
