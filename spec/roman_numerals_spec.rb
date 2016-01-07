@@ -69,6 +69,12 @@ RSpec.describe RomanNumerals do
 
     expect(roman_numeral).to eq("C")
   end
+  it "converts 900 to CM" do
+    roman_numeral = roman_numeral_converter.translate(900)
+
+    expect(roman_numeral).to eq("CM")
+  end
+
 
   it "converts 1000 to M" do
     roman_numeral = roman_numeral_converter.translate(1000)
