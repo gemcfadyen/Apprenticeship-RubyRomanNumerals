@@ -1,6 +1,6 @@
 class RomanNumerals
-  DECIMALS = [1, 4, 5, 9, 10, 50, 100, 900, 1000].reverse
-  ROMANS = ["I", "IV", "V", "IX", "X", "L", "C", "CM", "M"].reverse
+  DECIMALS = [1, 4, 5, 9, 10, 50, 90, 100, 900, 1000].reverse
+  ROMANS = ["I", "IV", "V", "IX", "X", "L", "XC", "C", "CM", "M"].reverse
 
   def translate(decimal)
     roman = ""

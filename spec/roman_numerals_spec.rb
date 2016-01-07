@@ -64,17 +64,23 @@ RSpec.describe RomanNumerals do
     expect(roman_numeral).to eq("L")
   end
 
+  it "converts 90 to XC" do
+    roman_numeral = roman_numeral_converter.translate(90)
+
+    expect(roman_numeral).to eq("XC")
+  end
+  
   it "converts 100 to C" do
     roman_numeral = roman_numeral_converter.translate(100)
 
     expect(roman_numeral).to eq("C")
   end
+ 
   it "converts 900 to CM" do
     roman_numeral = roman_numeral_converter.translate(900)
 
     expect(roman_numeral).to eq("CM")
   end
-
 
   it "converts 1000 to M" do
     roman_numeral = roman_numeral_converter.translate(1000)
