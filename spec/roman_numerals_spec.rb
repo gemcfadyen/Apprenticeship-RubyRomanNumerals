@@ -1,7 +1,7 @@
 require 'roman_numerals'
 
 RSpec.describe RomanNumerals do
-  roman_numeral_converter = RomanNumerals.new
+  let(:roman_numeral_converter) { RomanNumerals.new }
 
   it "converts 0 to empty string" do
     roman_numeral = roman_numeral_converter.translate(0)
@@ -20,7 +20,6 @@ RSpec.describe RomanNumerals do
 
     expect(roman_numeral).to eq("II")
   end
-
 
   it "converts 3 to III" do
     roman_numeral = roman_numeral_converter.translate(3)
